@@ -1,0 +1,101 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: snow;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: progress;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+   
+}
+
+
+
+
+.tasksContainer{
+    width: 70%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 2vw;
+
+    .addNew{
+        width: 20%;
+        align-self: flex-end;
+        align-content: center;
+        outline:none;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 5px;
+        background-color: rgb(113, 168, 244);
+        cursor: pointer;
+        color: black;
+        font-size: 1vw;
+        font-weight: 800;
+    }
+
+    background-color: snow;
+    border: 1px solid rgb(86, 84, 84);
+    -webkit-box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    
+}
+
+
+.task{
+    width:100%;
+    min-height: 10vh;
+    background-color: snow;
+    border: 1px solid rgba(131, 131, 131, 0.679);
+    border-radius: 4px;
+    -webkit-box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 0px 14px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .oppButtons{
+        display: flex;
+        width: auto;
+        gap: 2vw;
+
+        button{
+            width: 4vw;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            padding: 5px;
+            font-size: 0.8vw;
+            color: white;
+        }
+
+        button:nth-child(1){
+            background-color: rgb(54, 54, 154);
+        }
+
+        button:nth-child(2){
+            background-color: rgb(248, 69, 69);
+        }
+    }
+}
+
+
+.visuallyHidden{
+    display: none;
+}
